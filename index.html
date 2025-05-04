@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App de Sorteos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> <!-- Vincula tu archivo CSS -->
+</head>
+<body>
+    <div class="container">
+        <h1>Generador de Sorteos</h1>
+
+        <!-- Formulario para ingreso de datos -->
+        <form id="sorteoForm">
+            <label for="minNumber">Número mínimo:</label>
+            <input type="number" id="minNumber" required>
+
+            <label for="maxNumber">Número máximo:</label>
+            <input type="number" id="maxNumber" required>
+
+            <label for="numWinners">Cantidad de ganadores:</label>
+            <input type="number" id="numWinners" required>
+
+            <button type="submit">Generar Sorteo</button>
+        </form>
+
+        <!-- Resultado de ganadores -->
+        <div id="result" style="display: none;">
+            <h2>¡Resultados del Sorteo!</h2>
+            <ul id="winnersList"></ul>
+            <button id="clearBtn">Limpiar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Vincula tu archivo JS -->
+</body>
+</html>
